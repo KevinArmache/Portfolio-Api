@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get(`${BASE_URL}/projecs/`, (req, res) => {
+app.get(`${BASE_URL}/project/`, (req, res) => {
   let sql = "SELECT * FROM project";
   db.query(sql, (err, result) => {
     if (err) throw err;
